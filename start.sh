@@ -1,3 +1,5 @@
+docker build -f agent.Dockerfile -t myjenkinsagents:python .
+
 docker build -t myjenkins-blueocean:2.414.2 .
 
 docker run --name jenkins-blueocean --restart=on-failure --detach \
